@@ -1,21 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-body{
-    font-family: "Orbitron", sans-serif;
-    background-color: black;
-    color: aliceblue;
+/* Base styling */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
-.header{
-    background-image: url(./images/hero.jpeg);
-    background-color: black;
-    color: aliceblue;
-    margin-top: 0px;
-    background-size: cover;
-    margin-bottom: 500px;
-}
-.header h1{
+
+/* Header styling */
+.header {
     text-align: center;
+    padding: 100px 20px;
+    background: url('./images/space-bg.jpg') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
 }
-/* 
-.header p{
-  margin-bottom: 500px;
-} */
+
+.header img {
+    max-width: 200px;
+    margin-bottom: 20px;
+    animation: float 4s infinite alternate;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #00c8ff;
+    text-shadow: 0 0 15px rgba(0, 200, 255, 0.5);
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.hero-btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #00c8ff;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.hero-btn:hover {
+    background-color: #005f99;
+}
+
+/* Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Section styles */
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #00c8ff;
+}
+
+.planet, .moon, .solar-system-objects article {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #777;
+}
